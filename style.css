@@ -1,0 +1,29 @@
+
+
+/*header {
+    max-width: 100%;
+    background: rgb(59, 126, 202);
+    display: flex;
+    justify-content: space-between;
+    background-size: contain;
+    overflow:hidden;
+    box-sizing: border-box;
+    
+}*/
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo   {
+  width: 18.62rem;
+  height: 10.93rem;
+}
+
+.phone  {
+    
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding:30px 30px 0 0;
+}
