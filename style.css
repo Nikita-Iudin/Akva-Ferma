@@ -134,12 +134,18 @@ main {
   font-size: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
 }
 .button {
-  font-size: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(15px + 10 * ((100vw - 320px) / (1280 - 320)));
   background-color: #635C5C;
   padding: 20px 20px 20px 20px;
  border-radius: 10px;
  color: #fff;
  text-decoration: none;
+ display: block;
+ width: 20rem;
+ height: 70px;
+ 
+ margin-top:30px;
+ text-align: center;
   
 }
 .right_block_first {
@@ -154,12 +160,14 @@ main {
 
 }
 
-img>.image_first {
-  width: 100px;
-}
 
 .image_first {
-  width: 85%;
+  
+width:45rem;
+height: 33rem;
+left: 821px;
+top: 375px;
+display: block;
 }
 
 /*Блок карточки*/
@@ -209,7 +217,7 @@ img>.image_first {
 }
 
 .ferma  {
-  background-image: url(/img/farmfish.png);
+  background-image: url(/img/rasbora.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
   width: calc(33.33333% - 25px);
@@ -218,7 +226,7 @@ img>.image_first {
 }
 
 .delivery {
-  background-image: url(/img/truck.png);
+  background-image: url(/img/neon\ goluboi\ fishferma.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
   width: calc(33.33333% - 25px);
