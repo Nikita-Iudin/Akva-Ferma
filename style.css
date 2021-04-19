@@ -194,7 +194,7 @@ display: block;
 
   width: 400px;
   height: 533px;
-  background-image: url(/img/87985406.jpg);
+  background-image: url(img/87985406.jpg);
   background-repeat: no-repeat;
   display: block;
   width: calc(33.33333% - 25px);
@@ -217,7 +217,7 @@ display: block;
 }
 
 .ferma  {
-  background-image: url(/img/rasbora.png);
+  background-image: url(img/rasbora.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
   width: calc(33.33333% - 25px);
@@ -226,7 +226,7 @@ display: block;
 }
 
 .delivery {
-  background-image: url(/img/neon\ goluboi\ fishferma.png);
+  background-image: url(img/neon\ goluboi\ fishferma.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
   width: calc(33.33333% - 25px);
