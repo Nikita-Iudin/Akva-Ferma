@@ -1,110 +1,229 @@
-/* Указываем box sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-  list-style: none;
-}
-
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 /* начало верстки*/
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-header {
+html {
+  font-size: 62.5%; /* 10px */
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 200%; /* 20px */
+  text-decoration: none;
+  font-size: 'Montserrat';
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+
+.header {
+  width: 100%;
     min-height: 100%;
     overflow:hidden;
+    position: fixed;
+    z-index: 50;
     
     
 }
 
 .container {
     max-width: 100%;
+   min-height:100%;
     padding: 0 15px;
     box-sizing: border-box;
     background: rgb(59, 126, 202);
     display: flex;
     justify-content: space-between;
     background-size: contain;
+    align-items: center;
 }
 
-.logo   {
+.logo img  {
+  
   width: 18.62rem;
   height: 10.93rem;
+  margin-top: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+  margin-bottom: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+}
+
+.contacts {
+  max-width:100%;
 }
 
 .phone  {
     
     color: rgb(0, 0, 0);
-    font-size: 25px;
-    padding:30px 30px 0 0;
+    font-size: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+    font-family: 'Montserrat';
 }
+
+/*меню*/
+
+.header__nav {
+  display: flex;
+  text-decoration: none;
+  
+}
+.menu__body {
+}
+.nav-list {
+  
+  
+}
+.nav-item {
+  
+  color: #fff;
+  font-family: Montserrat;
+}
+.nav-link {
+  text-decoration: none;
+  font-size: calc(10px + 7 * ((100vw - 320px) / (1280 - 320)));
+  color: #fff;
+  font-family: 'Montserrat';
+  padding:1rem;
+}
+
+.cart {
+  width:2rem;
+  height:2rem;
+}
+
+main {
+  font-size: 100px;
+  padding: 150px;
+}
+
+.menu_icon {
+  display: none;
+}
+
+/*блок main*/
+
+main {
+  width: 100%;
+  margin:50px 0 0 0;
+}
+
+.first_screen {
+  display: flex;
+  width: 100%;
+  margin-left:50px;
+  margin-bottom: 100px;
+  
+}
+.left_block_first {
+  font-family: 'Montserrat', sans-serif;
+  margin-top:300px;
+}
+.subheading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(12px + 10 * ((100vw - 320px) / (1280 - 320)));
+
+
+}
+.heading {
+
+  font-size: calc(50px + 30 * ((100vw - 320px) / (1280 - 320)));
+}
+.description {
+  font-size: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+}
+.button {
+  font-size: calc(10px + 10 * ((100vw - 320px) / (1280 - 320)));
+  background-color: #635C5C;
+  padding: 20px 20px 20px 20px;
+ border-radius: 10px;
+ color: #fff;
+ text-decoration: none;
+  
+}
+.right_block_first {
+  margin: 300px 0 0 50px;
+ 
+
+}
+.image_first img {
+  display: block;
+  object-fit: cover;
+  
+
+}
+
+img>.image_first {
+  width: 100px;
+}
+
+.image_first {
+  width: 85%;
+}
+
+/*Блок карточки*/
+
+.tab {
+  font-family: 'Montserrat';
+  font-size: 50px;
+  font-weight: 700;
+  margin:0 0 50px 50px;
+
+}
+.cart-menu {
+  margin-left:50px;
+  border: 1px solid #635C5C;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  flex-wrap: wrap;
+  flex: 0 0 250px;
+  
+}
+ .menu_main{
+  border: 1px solid #635C5C;
+
+  width: 400px;
+  height: 533px;
+  background-image: url(/img/87985406.jpg);
+  background-repeat: no-repeat;
+  display: block;
+  width: calc(33.33333% - 25px);
+  padding: 0 0 0 15px;
+
+  
+}
+.button_text {
+  
+
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: Montserrat;
+  padding-top:420px;
+  align-items: center;
+  
+  
+}
+
+.ferma  {
+  background-image: url(/img/farmfish.png);
+  border: 1px solid #635C5C;
+  width: 33.333333%;
+  width: calc(33.33333% - 25px);
+  padding: 0 0 0 15px;
+  margin:0 0 0 15px;
+}
+
+.delivery {
+  background-image: url(/img/truck.png);
+  border: 1px solid #635C5C;
+  width: 33.333333%;
+  width: calc(33.33333% - 25px);
+  padding: 0 0 0 15px;
+  margin:0 0 0 15px;
+}
+
+
+
