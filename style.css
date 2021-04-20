@@ -236,13 +236,14 @@ display: block;
 }
 
 .delivery_text {
-  display: block;
+   display: block;
   text-decoration: none;
   color: #fff;
   font-size: 3rem;
   font-family: Montserrat;
   padding-top:420px;
   align-items: center;
+  z-index: 50;
 }
 
 .ferma  {
@@ -253,6 +254,7 @@ display: block;
   padding: 0 0 0 15px;
   margin:0 0 0 15px;
   border-radius: 30px;
+ 
 }
 
 .delivery {
