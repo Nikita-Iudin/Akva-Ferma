@@ -181,28 +181,33 @@ display: block;
   font-size: 50px;
   font-weight: 700;
   margin:0 0 50px 50px;
+  
 
 }
 .cart-menu {
   margin-left:50px;
   border: 1px solid #635C5C;
   display: flex;
+  max-width: 100%;
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
-  flex-wrap: wrap;
-  flex: 0 0 250px;
+ 
+  
   
 }
  .menu_main{
   border: 1px solid #635C5C;
+  border-radius: 30px;
 
   width: 400px;
   height: 533px;
   background-image: url(./img/87985406.jpg);
   background-repeat: no-repeat;
   display: block;
-  width: calc(33.33333% - 25px);
+  min-width:300px;
+  min-height: ;
   padding: 0 0 0 15px;
+  border-radius: 30px;
 
   
 }
@@ -220,22 +225,45 @@ display: block;
   
 }
 
+.ferma_text {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: Montserrat;
+  padding-top:420px;
+  align-items: center;
+}
+
+.delivery_text {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3rem;
+  font-family: Montserrat;
+  padding-top:420px;
+  align-items: center;
+}
+
 .ferma  {
   background-image: url(./img/rasbora.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
-  width: calc(33.33333% - 25px);
+  min-width:300px;
   padding: 0 0 0 15px;
   margin:0 0 0 15px;
+  border-radius: 30px;
 }
 
 .delivery {
   background-image: url(./img/neon\ goluboi\ fishferma.png);
   border: 1px solid #635C5C;
   width: 33.333333%;
-  width: calc(33.33333% - 25px);
+  min-width:300px;
+  /*width: calc(33.33333% - 25px);*/
   padding: 0 0 0 15px;
   margin:0 0 0 15px;
+  border-radius: 30px;
 }
 
 

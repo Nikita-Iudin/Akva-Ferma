@@ -88,6 +88,8 @@ transform: scale(0) translate(0px,-50px);
     bottom: 50%;
     transform: rotate(45deg)translate(0px,50%);
 }
+
+
    
 
 
@@ -100,6 +102,8 @@ transform: scale(0) translate(0px,-50px);
         display: flex;
         align-items: center;
     }
+
+   
     
 }
 
@@ -138,6 +142,44 @@ transform: scale(0) translate(0px,-50px);
       
         
       }
+
+      .cart-menu {
+        flex-direction: column;
+        flex: 0 0 300px;
+    }
+    .menu_main {
+        width: 100%;
+    }
+    .ferma {
+        width: 100%;
+    }
+
+    .tab {
+    }
+    .tropik_ferma {
+    }
+    .cart-menu {
+        padding: 0;
+        margin: 15px;
+    }
+    .menu_main {
+        margin:30px 0 0 0;
+    }
+    .button_text {
+       
+    }
+    .ferma {
+        margin:30px 0 0 0;
+    }
+    .ferma_text {
+    }
+    .delivery {
+        margin:30px 0 0 0;
+        width: 100%;
+        
+    }
+    .delivery_text {
+    }
 }
 
 
