@@ -126,8 +126,7 @@ transform: scale(0) translate(0px,-50px);
 
     .image_first {
         object-fit: cover;
-        width:100%;
-        height: 100%;
+       
         
 
       
@@ -135,7 +134,7 @@ transform: scale(0) translate(0px,-50px);
 
       .left_block_first {
         font-family: 'Montserrat', sans-serif;
-        margin-top:150px;
+        
       }
 
       .button {
@@ -179,6 +178,35 @@ transform: scale(0) translate(0px,-50px);
         
     }
     .delivery_text {
+    }
+
+
+    /*ferma_descriptiom*/
+
+    .ferma_description {
+        display: flex;
+        flex-direction: column;
+    }
+    .left_description {
+    }
+    .text_ferma_decription {
+      font-size: 1.9rem;
+      padding-top:;
+    
+    }
+    .right_description {
+    }
+    .image_decription {
+      
+      width: 60rem;
+    height: 35rem;
+    left: 664px;
+    top: 1916px;
+    }
+    
+    .button_description {
+      font-size: 2rem;
+      color:#fff;
     }
 }
 
