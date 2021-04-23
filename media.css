@@ -134,6 +134,7 @@ transform: scale(0) translate(0px,-50px);
 
       .left_block_first {
         font-family: 'Montserrat', sans-serif;
+        margin: 20rem 0 0 0;
         
       }
 
@@ -208,6 +209,14 @@ transform: scale(0) translate(0px,-50px);
       font-size: 2rem;
       color:#fff;
     }
+}
+
+    @media all and (max-width: 500px) {
+
+        .phone {
+    display: none;
+}
+    
 }
 
 

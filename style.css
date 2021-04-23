@@ -56,7 +56,6 @@ body._lock {
 
 .phone  {
     
-    color: rgb(0, 0, 0);
     font-size:2rem;
     font-family: 'Montserrat';
     color: #fff;
@@ -90,8 +89,8 @@ body._lock {
 }
 
 .cart {
-  width:2rem;
-  height:2rem;
+  width:2.5rem;
+  height:2.5rem;
 }
 
 main {
